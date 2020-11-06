@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/font/Roboto-Regular.ttf">
+    <link rel="stylesheet" href="css/font/Font Awesome 5 Free-Regular-400.otf">
     <title> GAZUA</title>
+
+    <style>
+        .nav-container {
+            position: fixed;
+            top: 0;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #d2d2d2, #e0e0e0, #efefef);
+            list-style-type: none;
+            font-family: Roboto-Regular;
+            font-size: large;
+        }
+
+        .nav-item {
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 15px;
+            cursor: pointer;
+        }
+    </style>
+
+
 </head>
 
 <body>
-    <header></header> <!-- 첫머리 --> 
-    <nav></nav> <!-- 메뉴 --> 
-    <article></article> <!-- 본문 --> 
-    <footer></footer> <!-- 끝머리 -->
+    <header style="width: 100px; height: 100px;">
+        <nav>
+            <ul class="nav-container">
+                <img src="Bilder/world_data-logo.svg" />
+                <li class="nav-item"><a href="" style="text-decoration: none; color: #6d6d6d">A1 - Table</a></li>
+                <li class="nav-item"><a href="" style="text-decoration: none; color: #6d6d6d;">A2 - Parse</a></li>
+                <li class="nav-item"><a href="" style="text-decoration: none; color: #6d6d6d;">A2 - Save</a></li>
+                <li class="nav-item"><a href="" style="text-decoration: none; color: #6d6d6d;">A2 - Print</a></li>
+                <li class="nav-item"><a href="" style="text-decoration: none; color: #6d6d6d;">A3 - REST</a></li>
+                <li class="nav-item"><a href="" style="text-decoration: none; color: #6d6d6d;">A4 - Vis</a></li>
+                <li class="nav-item"><a href="" style="text-decoration: none; color: #6d6d6d;">A5 - 3D</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Semantische Tags</h2>
+        <section>GAZUA</section>
+    </main>
+
+    <footer></footer>
 </body>
+
 </html>
