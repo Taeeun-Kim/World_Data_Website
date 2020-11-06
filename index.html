@@ -26,14 +26,11 @@
             padding-top: 10%;
         }
 
+        
         .nav-container {
-            /*
-            padding: 0;
-            */
             position: fixed;
             top: 0;
             left: 0;
-            display: flex;
             flex-direction: row;
             margin: 0;
             padding: 0;
@@ -51,8 +48,10 @@
             margin-right: auto;
             padding: 15px;
             cursor: pointer;
-
+            float: left;
+            text-align: center;
         }
+        
 
         .nav-font {
             text-decoration: none;
@@ -67,7 +66,8 @@
     <header>
         <nav>
             <ul class="nav-container">
-                <img src="Bilder/world_data-logo.svg" width="10%" />
+                <img src="Bilder/world_data-logo.svg" width="5%" />
+                <!-- <img src="Bilder/world_data-logo.svg" width="10%" /> -->
                 <li class="nav-item"><a class="nav-font" href="">A1 - Table</a></li>
                 <li class="nav-item"><a class="nav-font" href="">A2 - Parse</a></li>
                 <li class="nav-item"><a class="nav-font" href="">A2 - Save</a></li>
