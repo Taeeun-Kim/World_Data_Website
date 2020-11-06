@@ -7,13 +7,40 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font/Roboto-Regular.ttf">
     <link rel="stylesheet" href="css/font/Roboto-Light.ttf">
-    <link rel="stylesheet" href="css/font/Font Awesome 5 Free-Regular-400.otf">
+    <link rel="stylesheet" href="css/font/Roboto-Bold.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title> GAZUA</title>
 
     <style>
+        html {
+
+            position: relative;
+
+            min-height: 100%;
+
+            margin: 0;
+        }
+
         body {
             margin: 0;
             padding: 0;
+            min-height: 100%;
+        }
+
+        .footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 17px 0;
+            text-align: left;
+            margin-left: 20%;
+            margin-right: 20%;
+            font-family: Roboto-Regular;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 145%;
         }
 
         .box {
@@ -21,10 +48,14 @@
             text-align: left;
             margin-left: 20%;
             margin-right: 20%;
-            font-family: Roboto-Regular; /* Basisschrift: Roboto */
-            font-size: 14px; /* Font-size: 14px */
-            font-style: normal; /* Style: Normal */
-            line-height: 145%; /* Zeilenabstand: 145% */
+            font-family: Roboto-Regular;
+            /* Basisschrift: Roboto */
+            font-size: 14px;
+            /* Font-size: 14px */
+            font-style: normal;
+            /* Style: Normal */
+            line-height: 145%;
+            /* Zeilenabstand: 145% */
         }
 
         .content {
@@ -33,7 +64,8 @@
             bottom: 0;
             right: 0;
             left: 0;
-            padding-top: 3%; /* zwischen Nav und "World Data Overview" */
+            padding-top: 3%;
+            /* zwischen Nav und "World Data Overview" */
         }
 
 
@@ -47,7 +79,6 @@
             background: linear-gradient(to bottom, #d2d2d2, #e0e0e0, #efefef);
             list-style-type: none;
             font-family: Roboto-Regular;
-            font-size: large;
         }
 
         #nav li {
@@ -66,7 +97,7 @@
         }
 
         .nav-font {
-            text-decoration: none; 
+            text-decoration: none;
             color: #6d6d6d;
         }
     </style>
@@ -79,13 +110,13 @@
         <nav>
             <ul id="nav">
                 <img class="nav-logo" src="Bilder/world_data-logo.svg" width="5%" />
-                <li><a class="nav-font" href="">A1 - Table</a></li>
-                <li><a class="nav-font" href="">A2 - Parse</a></li>
-                <li><a class="nav-font" href="">A2 - Save</a></li>
-                <li><a class="nav-font" href="">A2 - Print</a></li>
-                <li><a class="nav-font" href="">A3 - REST</a></li>
-                <li><a class="nav-font" href="">A4 - Vis</a></li>
-                <li><a class="nav-font" href="">A5 - 3D</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A1 - Table</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Parse</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Save</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Print</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A3 - REST</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A4 - Vis</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A5 - 3D</a></li>
             </ul>
         </nav>
     </header>
@@ -95,27 +126,34 @@
             <main>
                 <h1>World Data Overview ...</h1>
 
-                <div style="width:80%; margin-top: 2%; padding: 15px; box-shadow: 2px 5px 10px -3px #e4e4e4; border:2px solid #e4e4e4; border-top:2px solid #cceaad; column-count: 3;">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                <div
+                    style="width:80%; margin-top: 2%; padding: 15px; box-shadow: 2px 5px 10px -3px #e4e4e4; border:2px solid #e4e4e4; border-top:2px solid #cceaad; column-count: 3;">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore
                     et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
                     rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                    et
                     dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
                     rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                    et
                     dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
                     rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. from:
                     <a style="color: #88d12d;" href="www.loremipsum.de">www.loremipsum.de</a>
                 </div>
-
-
-
-
             </main>
         </div>
     </div>
 
-    <footer></footer>
+    <footer>
+        <div class="footer" style="border-top:2px solid #cceaad; color: #6d6d6d;">
+            <p style="text-align: left; line-break: unset;">gwqgwqgwqgwq</p> <p style="text-align: right;">gfegqwgwqg</p>
+                Copylight © 2020 world_data<br> This solution has been crated by:
+                First course exercise HTML, CSS and JS of the lecture Web and Multimedia Engineering
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
