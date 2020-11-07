@@ -9,16 +9,13 @@
     <link rel="stylesheet" href="css/font/Roboto-Light.ttf">
     <link rel="stylesheet" href="css/font/Roboto-Bold.ttf">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <title> GAZUA</title>
 
     <style>
         html {
-
             position: relative;
-
             min-height: 100%;
-
             margin: 0;
         }
 
@@ -30,13 +27,12 @@
 
         .footer {
             position: absolute;
-            left: 0;
             bottom: 0;
-            width: 100%;
+            width: 60%;
             padding: 17px 0;
-            text-align: left;
-            margin-left: 20%;
-            margin-right: 20%;
+            text-align: justify;
+            margin-left: 22%;
+            margin-right: 22%;
             font-family: Roboto-Regular;
             font-size: 14px;
             font-style: normal;
@@ -46,8 +42,8 @@
         .box {
             position: relative;
             text-align: left;
-            margin-left: 20%;
-            margin-right: 20%;
+            margin-left: 22%;
+            margin-right: 22%;
             font-family: Roboto-Regular;
             /* Basisschrift: Roboto */
             font-size: 14px;
@@ -74,7 +70,7 @@
             margin: 0;
             border: 0;
             padding: 0;
-            text-align: center;
+            text-align: left;
             width: 100%;
             background: linear-gradient(to bottom, #d2d2d2, #e0e0e0, #efefef);
             list-style-type: none;
@@ -107,9 +103,9 @@
 
 <body>
     <header>
-        <nav>
-            <ul id="nav">
-                <img class="nav-logo" src="Bilder/world_data-logo.svg" width="5%" />
+        <nav id="nav">
+            <ul id="nav" style="margin-left: 22%; margin-right: 22%; ">
+                <li><img class="nav-logo" src="Bilder/world_data-logo.svg" /></li>
                 <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A1 - Table</a></li>
                 <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Parse</a></li>
                 <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Save</a></li>
@@ -127,7 +123,7 @@
                 <h1>World Data Overview ...</h1>
 
                 <div
-                    style="width:80%; margin-top: 2%; padding: 15px; box-shadow: 2px 5px 10px -3px #e4e4e4; border:2px solid #e4e4e4; border-top:2px solid #cceaad; column-count: 3;">
+                    style="width:100%; margin-top: 2%; padding: 15px; box-shadow: 2px 5px 10px -3px #e4e4e4; border:2px solid #e4e4e4; border-top:2px solid #cceaad; column-count: 3;">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore
                     et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
@@ -147,11 +143,14 @@
     </div>
 
     <footer>
-        <div class="footer" style="border-top:2px solid #cceaad; color: #6d6d6d;">
-            <p style="text-align: left; line-break: unset;">gwqgwqgwqgwq</p> <p style="text-align: right;">gfegqwgwqg</p>
-                Copylight © 2020 world_data<br> This solution has been crated by:
-                First course exercise HTML, CSS and JS of the lecture Web and Multimedia Engineering
-            </div>
+        <div class="footer" style="border-top:2px solid #cceaad; color: #6d6d6d; padding-top: 0.7%;">
+            <div style="float:left;">Copylight © 2020 world_data</div>
+            <div style="float:right;">This solution has been crated by:</div> </br>
+            <div style="float:left;">First course exercise&nbsp;</div>
+            <div style="float:left; font-weight: bold;">HTML, CSS and JS&nbsp;</div>
+            <div style="float:left;">of the lecture Web and Multimedia Engineering</div>
+            <div style="float:right;">Taeeun Kim</div>
+        </div>
         </div>
     </footer>
 </body>
