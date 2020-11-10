@@ -92,6 +92,26 @@
             margin-bottom: 2%;
         }
 
+        .overview-link:hover {
+            color: #4c8715;
+        }
+
+        .show-hide {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 145%;
+            color: #a4a4a4;
+        }
+
+        .show-hide-list {
+            text-decoration: underline;
+            border-right: 2px solid #a4a4a4;
+        }
+
+        .show-hide-list:hover {
+            color: #4c8715;
+        }
 
         .nav {
             list-style: none;
@@ -309,15 +329,22 @@
                     et
                     dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
                     rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. from:
-                    <a style="color: #88d12d;" href="www.loremipsum.de">www.loremipsum.de</a>
+                    <a class="overview-link" style="color: #88d12d;" href="www.loremipsum.de">www.loremipsum.de</a>
                 </div>
 
-                <div>
-                    <p>Show Hide Column</p>
-                    <li><input type="checkbox" value="hide" id="id" onchange="hide_show_table(this.id);">Name</li>
-                    <li><input type="checkbox" value="hide" id="name" onchange="hide_show_table(this.id);">Age</li>
-                    <li><input type="checkbox" value="hide" id="gdp" onchange="hide_show_table(this.id);">City</li>
-                </div>
+                <ul class="show-hide" style="list-style: none; margin: 0; padding: 0;">
+                    <span style="float:left">Show/Hide:&nbsp;</span>
+                    <a class="show-hide-list" id="birth" style="border-right: 2px solid #a4a4a4;"
+                        onclick="hide_show_table(this.id);">birth
+                        rate&nbsp;</a><a>&nbsp;</a>
+                    <a id="cell" style="border-right: 2px solid #a4a4a4;" onclick="hide_show_table(this.id);">cell
+                        phones&nbsp;</a>
+                    <a id="children" style="border-right: 2px solid #a4a4a4;"
+                        onclick="hide_show_table(this.id);">children&nbsp;</a>
+                    <a id="electricity" style="border-right: 2px solid #a4a4a4;"
+                        onclick="hide_show_table(this.id);">electricity&nbsp;</a>
+                    <a id="gdp" onclick="hide_show_table(this.id);">gdp</a>
+                </ul>
 
                 <table class="table-data">
                     <thead>
