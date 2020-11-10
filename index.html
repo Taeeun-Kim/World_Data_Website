@@ -37,6 +37,8 @@
             height: 100%;
             /* min-height */
             margin: 0;
+            padding: 0;
+            /* 추가한것 */
         }
 
         body {
@@ -46,15 +48,14 @@
             height: 100%;
         }
 
-        #head {
-            position: relative;
-        }
-
-        #footer {
+        .footer {
+            margin: 0;
+            padding: 0;
             position: absolute;
-            bottom: 0;
-            /* bottom: -59%; */
+            /* 
+            bottom: -59%; 
             height: 100px;
+            */
             width: 56.5%;
             padding: 17px 0;
             text-align: justify;
@@ -64,6 +65,12 @@
             font-size: 14px;
             font-style: normal;
             line-height: 145%;
+
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 150;
         }
 
         .box {
@@ -604,8 +611,8 @@
 
 
 
-    <footer>
-        <div id="footer" style="border-top:2px solid #cceaad; color: #6d6d6d; padding-top: 0.1.4%;">
+    <footer class="footer">
+        <div style="border-top:2px solid #cceaad; color: #6d6d6d; padding-top: 0.1.4%;">
             <div style="float:left;">Copylight © 2020 world_data</div>
             <div style="float:right;">This solution has been crated by:</div> </br>
             <div style="float:left;">First course exercise&nbsp;</div>
