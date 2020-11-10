@@ -10,8 +10,8 @@
 
     <script type="text/javascript">
         function hide_show_table(col_name) {
-            var checkbox_val = document.getElementById(col_name).value;
-            if (checkbox_val == "hide") {
+            var list_value = document.getElementById(col_name).value;
+            if (list_value == "hide") {
                 var all_col = document.getElementsByClassName(col_name);
                 for (var i = 0; i < all_col.length; i++) {
                     all_col[i].style.display = "none";
@@ -52,11 +52,7 @@
             margin: 0;
             padding: 0;
             position: absolute;
-            /* 
-            bottom: -59%; 
-            height: 100px;
-            */
-            width: 56.5%;
+            width: 56%;
             padding: 17px 0;
             text-align: justify;
             margin-left: 22%;
@@ -350,17 +346,11 @@
 
                 <ul class="show-hide" style="list-style: none; margin: 0; padding: 0; margin-bottom: 1.4%;">
                     <span style="float:left">Show/Hide:&nbsp;</span>
-                    <a class="show-hide-list" id="birth" style="border-right: 2px solid #a4a4a4;"
-                        onclick="hide_show_table(this.id);">birth
-                        rate&nbsp;</a><a>&nbsp;</a>
-                    <a class="show-hide-list" id="cell" style="border-right: 2px solid #a4a4a4;"
-                        onclick="hide_show_table(this.id);">cell
-                        phones&nbsp;</a>
-                    <a class="show-hide-list" id="children" style="border-right: 2px solid #a4a4a4;"
-                        onclick="hide_show_table(this.id);">children&nbsp;</a>
-                    <a class="show-hide-list" id="electricity" style="border-right: 2px solid #a4a4a4;"
-                        onclick="hide_show_table(this.id);">electricity&nbsp;</a>
-                    <a class="show-hide-list" id="gdp" onclick="hide_show_table(this.id);">gdp</a>
+                    <a class="show-hide-list" id="birth" onclick="hide_show_table(this.id);">birth rate&nbsp;</a><a>&nbsp;</a>
+                    <a class="show-hide-list" id="cell" onclick="hide_show_table(this.id);">cell phones&nbsp;</a>
+                    <a class="show-hide-list" id="children" onclick="hide_show_table(this.id);">children&nbsp;</a>
+                    <a class="show-hide-list" id="electricity" onclick="hide_show_table(this.id);">electricity&nbsp;</a>
+                    <a class="show-hide-list" id="gdp" style="border: none;" onclick="hide_show_table(this.id);">gdp</a>
                 </ul>
 
                 <table class="table-data">
@@ -612,7 +602,7 @@
 
 
     <footer class="footer">
-        <div style="border-top:2px solid #cceaad; color: #6d6d6d; padding-top: 0.1.4%;">
+        <div style="border-top:2px solid #cceaad; color: #6d6d6d; padding-top: 1.2%;">
             <div style="float:left;">Copylight © 2020 world_data</div>
             <div style="float:right;">This solution has been crated by:</div> </br>
             <div style="float:left;">First course exercise&nbsp;</div>
