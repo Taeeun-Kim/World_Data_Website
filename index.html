@@ -13,20 +13,23 @@
     <style>
         html {
             position: relative;
-            min-height: 100%;
+            height: 100%;
+            /* min-height */
             margin: 0;
         }
 
         body {
+            position: relative;
             margin: 0;
             padding: 0;
-            min-height: 100%;
+            height: 100%;
         }
 
         .footer {
             position: absolute;
-            bottom: 0;
-            width: 60%;
+            bottom: -600px;
+            height: 50px;
+            width: 56.5%;
             padding: 17px 0;
             text-align: justify;
             margin-left: 22%;
@@ -59,7 +62,6 @@
         }
 
         .overview-box {
-            width: 100%;
             margin-top: 2%;
             padding: 15px;
             box-shadow: 2px 5px 10px -3px #e4e4e4;
@@ -170,6 +172,26 @@
             background-color: #3e8e41;
         }
 
+        .table-data {
+            border-collapse: collapse;
+            position: relative;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 145%;
+            width: 100%;
+        }
+
+        .cell_padding {
+            padding: 1em;
+        }
+
+        tr:nth-of-type(even) {
+            /* Table even color */
+            background-color: #e4e4e4;
+        }
+
         @media all and (max-width:767px) {
             .nav {
                 display: none;
@@ -183,7 +205,8 @@
                 margin-left: 2%;
                 margin-right: 10%;
             }
-            .footer{
+
+            .footer {
                 margin-left: 2%;
                 margin-right: 10%;
             }
@@ -259,10 +282,10 @@
                     <a style="color: #88d12d;" href="www.loremipsum.de">www.loremipsum.de</a>
                 </div>
 
-                <table>
+                <table class="table-data">
                     <thead>
-                        <tr>
-                            <th title="Field #1">id</th> 
+                        <tr style="border-bottom:3px solid #e4e4e4;">
+                            <th title="Field #1">id</th>
                             <th title="Field #2">name</th>
                             <th title="Field #3">birth rate per 1000</th>
                             <th title="Field #4">cell phones per 100</th>
@@ -273,229 +296,229 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td align="left">001</td>
-                            <td>Brazil </td>
-                            <td align="left">16.405 </td>
-                            <td align="left">90.01936334 </td>
-                            <td align="left">1.862 </td>
-                            <td align="left">2201.808724 </td>
-                            <td align="left">4424.758692 </td>
+                            <td class="cell_padding">001</td>
+                            <td class="cell_padding">Brazil </td>
+                            <td class="cell_padding">16.405 </td>
+                            <td class="cell_padding">90.01936334 </td>
+                            <td class="cell_padding">1.862 </td>
+                            <td class="cell_padding">2201.808724 </td>
+                            <td class="cell_padding">4424.758692 </td>
                         </tr>
                         <tr>
-                            <td align="left">002</td>
-                            <td>Canada </td>
-                            <td align="left">10.625 </td>
-                            <td align="left">70.70997244 </td>
-                            <td align="left">1.668 </td>
-                            <td align="left">15119.76414 </td>
-                            <td align="left">25069.86915 </td>
+                            <td class="cell_padding">002</td>
+                            <td class="cell_padding">Canada </td>
+                            <td class="cell_padding">10.625 </td>
+                            <td class="cell_padding">70.70997244 </td>
+                            <td class="cell_padding">1.668 </td>
+                            <td class="cell_padding">15119.76414 </td>
+                            <td class="cell_padding">25069.86915 </td>
                         </tr>
                         <tr>
-                            <td align="left">003</td>
-                            <td>Chile </td>
-                            <td align="left">15.04 </td>
-                            <td align="left">97.01862561 </td>
-                            <td align="left">1.873 </td>
-                            <td align="left">3276.06449 </td>
-                            <td align="left">6451.631126 </td>
+                            <td class="cell_padding">003</td>
+                            <td class="cell_padding">Chile </td>
+                            <td class="cell_padding">15.04 </td>
+                            <td class="cell_padding">97.01862561 </td>
+                            <td class="cell_padding">1.873 </td>
+                            <td class="cell_padding">3276.06449 </td>
+                            <td class="cell_padding">6451.631126 </td>
                         </tr>
                         <tr>
-                            <td align="left">004</td>
-                            <td>China </td>
-                            <td align="left">13.536 </td>
-                            <td align="left">55.97490921 </td>
-                            <td align="left">1.642 </td>
-                            <td align="left">2632.724637 </td>
-                            <td align="left">2208.403948 </td>
+                            <td class="cell_padding">004</td>
+                            <td class="cell_padding">China </td>
+                            <td class="cell_padding">13.536 </td>
+                            <td class="cell_padding">55.97490921 </td>
+                            <td class="cell_padding">1.642 </td>
+                            <td class="cell_padding">2632.724637 </td>
+                            <td class="cell_padding">2208.403948 </td>
                         </tr>
                         <tr>
-                            <td align="left">005</td>
-                            <td>Colombia </td>
-                            <td align="left">20.605 </td>
-                            <td align="left">92.34584564 </td>
-                            <td align="left">2.405 </td>
-                            <td align="left">1041.994137 </td>
-                            <td align="left">3137.695335 </td>
+                            <td class="cell_padding">005</td>
+                            <td class="cell_padding">Colombia </td>
+                            <td class="cell_padding">20.605 </td>
+                            <td class="cell_padding">92.34584564 </td>
+                            <td class="cell_padding">2.405 </td>
+                            <td class="cell_padding">1041.994137 </td>
+                            <td class="cell_padding">3137.695335 </td>
                         </tr>
                         <tr>
-                            <td align="left">006</td>
-                            <td>Ecuador </td>
-                            <td align="left">20.989 </td>
-                            <td align="left">92.84925653 </td>
-                            <td align="left">2.69 </td>
-                            <td align="left">1078.038961 </td>
-                            <td align="left">1692.067197 </td>
+                            <td class="cell_padding">006</td>
+                            <td class="cell_padding">Ecuador </td>
+                            <td class="cell_padding">20.989 </td>
+                            <td class="cell_padding">92.84925653 </td>
+                            <td class="cell_padding">2.69 </td>
+                            <td class="cell_padding">1078.038961 </td>
+                            <td class="cell_padding">1692.067197 </td>
                         </tr>
                         <tr>
-                            <td align="left">007</td>
-                            <td>Egypt </td>
-                            <td align="left">24.83 </td>
-                            <td align="left">69.43661504 </td>
-                            <td align="left">2.919 </td>
-                            <td align="left">1607.918763 </td>
-                            <td align="left">1911.964501 </td>
+                            <td class="cell_padding">007</td>
+                            <td class="cell_padding">Egypt </td>
+                            <td class="cell_padding">24.83 </td>
+                            <td class="cell_padding">69.43661504 </td>
+                            <td class="cell_padding">2.919 </td>
+                            <td class="cell_padding">1607.918763 </td>
+                            <td class="cell_padding">1911.964501 </td>
                         </tr>
                         <tr>
-                            <td align="left">008</td>
-                            <td>Finland </td>
-                            <td align="left">11.127 </td>
-                            <td align="left">144.1530224 </td>
-                            <td align="left">1.86 </td>
-                            <td align="left">15241.61194 </td>
-                            <td align="left">26205.68832 </td>
+                            <td class="cell_padding">008</td>
+                            <td class="cell_padding">Finland </td>
+                            <td class="cell_padding">11.127 </td>
+                            <td class="cell_padding">144.1530224 </td>
+                            <td class="cell_padding">1.86 </td>
+                            <td class="cell_padding">15241.61194 </td>
+                            <td class="cell_padding">26205.68832 </td>
                         </tr>
                         <tr>
-                            <td align="left">009</td>
-                            <td>France </td>
-                            <td align="left">12.21 </td>
-                            <td align="left">95.44434226 </td>
-                            <td align="left">1.978 </td>
-                            <td align="left">7339.946832 </td>
-                            <td align="left">22508.76261 </td>
+                            <td class="cell_padding">009</td>
+                            <td class="cell_padding">France </td>
+                            <td class="cell_padding">12.21 </td>
+                            <td class="cell_padding">95.44434226 </td>
+                            <td class="cell_padding">1.978 </td>
+                            <td class="cell_padding">7339.946832 </td>
+                            <td class="cell_padding">22508.76261 </td>
                         </tr>
                         <tr>
-                            <td align="left">010</td>
-                            <td>Germany </td>
-                            <td align="left">8.136 </td>
-                            <td align="left">127.4188883 </td>
-                            <td align="left">1.376 </td>
-                            <td align="left">6753.05764 </td>
-                            <td align="left">24368.19561 </td>
+                            <td class="cell_padding">010</td>
+                            <td class="cell_padding">Germany </td>
+                            <td class="cell_padding">8.136 </td>
+                            <td class="cell_padding">127.4188883 </td>
+                            <td class="cell_padding">1.376 </td>
+                            <td class="cell_padding">6753.05764 </td>
+                            <td class="cell_padding">24368.19561 </td>
                         </tr>
                         <tr>
-                            <td align="left">011</td>
-                            <td>Iceland </td>
-                            <td align="left">14.738 </td>
-                            <td align="left">107.6604456 </td>
-                            <td align="left">2.123 </td>
-                            <td align="left">51259.18763 </td>
-                            <td align="left">35310.97441 </td>
+                            <td class="cell_padding">011</td>
+                            <td class="cell_padding">Iceland </td>
+                            <td class="cell_padding">14.738 </td>
+                            <td class="cell_padding">107.6604456 </td>
+                            <td class="cell_padding">2.123 </td>
+                            <td class="cell_padding">51259.18763 </td>
+                            <td class="cell_padding">35310.97441 </td>
                         </tr>
                         <tr>
-                            <td align="left">012</td>
-                            <td>Iraq </td>
-                            <td align="left">31.585 </td>
-                            <td align="left">65.47478839 </td>
-                            <td align="left">4.276 </td>
-                            <td align="left">1086.323768 </td>
-                            <td align="left">752.1833548 </td>
+                            <td class="cell_padding">012</td>
+                            <td class="cell_padding">Iraq </td>
+                            <td class="cell_padding">31.585 </td>
+                            <td class="cell_padding">65.47478839 </td>
+                            <td class="cell_padding">4.276 </td>
+                            <td class="cell_padding">1086.323768 </td>
+                            <td class="cell_padding">752.1833548 </td>
                         </tr>
                         <tr>
-                            <td align="left">013</td>
-                            <td>Japan </td>
-                            <td align="left">8.201 </td>
-                            <td align="left">91.8955442 </td>
-                            <td align="left">1.359 </td>
-                            <td align="left">7838.005685 </td>
-                            <td align="left">38242.02429 </td>
+                            <td class="cell_padding">013</td>
+                            <td class="cell_padding">Japan </td>
+                            <td class="cell_padding">8.201 </td>
+                            <td class="cell_padding">91.8955442 </td>
+                            <td class="cell_padding">1.359 </td>
+                            <td class="cell_padding">7838.005685 </td>
+                            <td class="cell_padding">38242.02429 </td>
                         </tr>
                         <tr>
-                            <td align="left">014</td>
-                            <td>Kazakhstan </td>
-                            <td align="left">19.775 </td>
-                            <td align="left">107.7147692 </td>
-                            <td align="left">2.537 </td>
-                            <td align="left">4447.142293 </td>
-                            <td align="left">2345.86415 </td>
+                            <td class="cell_padding">014</td>
+                            <td class="cell_padding">Kazakhstan </td>
+                            <td class="cell_padding">19.775 </td>
+                            <td class="cell_padding">107.7147692 </td>
+                            <td class="cell_padding">2.537 </td>
+                            <td class="cell_padding">4447.142293 </td>
+                            <td class="cell_padding">2345.86415 </td>
                         </tr>
                         <tr>
-                            <td align="left">015</td>
-                            <td>Mexico </td>
-                            <td align="left">19.091 </td>
-                            <td align="left">74.25785259 </td>
-                            <td align="left">2.313 </td>
-                            <td align="left">1869.82352 </td>
-                            <td align="left">5875.619997 </td>
+                            <td class="cell_padding">015</td>
+                            <td class="cell_padding">Mexico </td>
+                            <td class="cell_padding">19.091 </td>
+                            <td class="cell_padding">74.25785259 </td>
+                            <td class="cell_padding">2.313 </td>
+                            <td class="cell_padding">1869.82352 </td>
+                            <td class="cell_padding">5875.619997 </td>
                         </tr>
                         <tr>
-                            <td align="left">016</td>
-                            <td>New Zealand </td>
-                            <td align="left">13.831 </td>
-                            <td align="left">108.7301521 </td>
-                            <td align="left">2.125 </td>
-                            <td align="left">9375.550304 </td>
-                            <td align="left">14778.16393 </td>
+                            <td class="cell_padding">016</td>
+                            <td class="cell_padding">New Zealand </td>
+                            <td class="cell_padding">13.831 </td>
+                            <td class="cell_padding">108.7301521 </td>
+                            <td class="cell_padding">2.125 </td>
+                            <td class="cell_padding">9375.550304 </td>
+                            <td class="cell_padding">14778.16393 </td>
                         </tr>
                         <tr>
-                            <td align="left">017</td>
-                            <td>Nigeria </td>
-                            <td align="left">40.134 </td>
-                            <td align="left">48.23561006 </td>
-                            <td align="left">6.021 </td>
-                            <td align="left">119.8151486 </td>
-                            <td align="left">513.5003377 </td>
+                            <td class="cell_padding">017</td>
+                            <td class="cell_padding">Nigeria </td>
+                            <td class="cell_padding">40.134 </td>
+                            <td class="cell_padding">48.23561006 </td>
+                            <td class="cell_padding">6.021 </td>
+                            <td class="cell_padding">119.8151486 </td>
+                            <td class="cell_padding">513.5003377 </td>
                         </tr>
                         <tr>
-                            <td align="left">018</td>
-                            <td>Peru </td>
-                            <td align="left">21.342 </td>
-                            <td align="left">85.86901405 </td>
-                            <td align="left">2.545 </td>
-                            <td align="left">1043.052601 </td>
-                            <td align="left">2955.186222 </td>
+                            <td class="cell_padding">018</td>
+                            <td class="cell_padding">Peru </td>
+                            <td class="cell_padding">21.342 </td>
+                            <td class="cell_padding">85.86901405 </td>
+                            <td class="cell_padding">2.545 </td>
+                            <td class="cell_padding">1043.052601 </td>
+                            <td class="cell_padding">2955.186222 </td>
                         </tr>
                         <tr>
-                            <td align="left">019</td>
-                            <td>Russia </td>
-                            <td align="left">10.828 </td>
-                            <td align="left">161.1162887 </td>
-                            <td align="left">1.537 </td>
-                            <td align="left">6132.978648 </td>
-                            <td align="left">2806.41483 </td>
+                            <td class="cell_padding">019</td>
+                            <td class="cell_padding">Russia </td>
+                            <td class="cell_padding">10.828 </td>
+                            <td class="cell_padding">161.1162887 </td>
+                            <td class="cell_padding">1.537 </td>
+                            <td class="cell_padding">6132.978648 </td>
+                            <td class="cell_padding">2806.41483 </td>
                         </tr>
                         <tr>
-                            <td align="left">020</td>
-                            <td>Saudi Arabia </td>
-                            <td align="left">23.569 </td>
-                            <td align="left">167.3474553 </td>
-                            <td align="left">2.898 </td>
-                            <td align="left">7430.743897 </td>
-                            <td align="left">9294.355996 </td>
+                            <td class="cell_padding">020</td>
+                            <td class="cell_padding">Saudi Arabia </td>
+                            <td class="cell_padding">23.569 </td>
+                            <td class="cell_padding">167.3474553 </td>
+                            <td class="cell_padding">2.898 </td>
+                            <td class="cell_padding">7430.743897 </td>
+                            <td class="cell_padding">9294.355996 </td>
                         </tr>
                         <tr>
-                            <td align="left">021</td>
-                            <td>South Africa </td>
-                            <td align="left">22.113 </td>
-                            <td align="left">93.33587369 </td>
-                            <td align="left">2.5 </td>
-                            <td align="left">4532.021902 </td>
-                            <td align="left">3697.67368 </td>
+                            <td class="cell_padding">021</td>
+                            <td class="cell_padding">South Africa </td>
+                            <td class="cell_padding">22.113 </td>
+                            <td class="cell_padding">93.33587369 </td>
+                            <td class="cell_padding">2.5 </td>
+                            <td class="cell_padding">4532.021902 </td>
+                            <td class="cell_padding">3697.67368 </td>
                         </tr>
                         <tr>
-                            <td align="left">022</td>
-                            <td>Sweden </td>
-                            <td align="left">11.72 </td>
-                            <td align="left">112.1241184 </td>
-                            <td align="left">1.937 </td>
-                            <td align="left">14143.01101 </td>
-                            <td align="left">30885.45914 </td>
+                            <td class="cell_padding">022</td>
+                            <td class="cell_padding">Sweden </td>
+                            <td class="cell_padding">11.72 </td>
+                            <td class="cell_padding">112.1241184 </td>
+                            <td class="cell_padding">1.937 </td>
+                            <td class="cell_padding">14143.01101 </td>
+                            <td class="cell_padding">30885.45914 </td>
                         </tr>
                         <tr>
-                            <td align="left">023</td>
-                            <td>United Arab Emirates</td>
-                            <td align="left">14.027 </td>
-                            <td align="left">153.7997194 </td>
-                            <td align="left">1.903 </td>
-                            <td align="left">9998.291079 </td>
-                            <td align="left">22507.00157 </td>
+                            <td class="cell_padding">023</td>
+                            <td class="cell_padding">United Arab Emirates</td>
+                            <td class="cell_padding">14.027 </td>
+                            <td class="cell_padding">153.7997194 </td>
+                            <td class="cell_padding">1.903 </td>
+                            <td class="cell_padding">9998.291079 </td>
+                            <td class="cell_padding">22507.00157 </td>
                         </tr>
                         <tr>
-                            <td align="left">024</td>
-                            <td>United Kingdom </td>
-                            <td align="left">12.195 </td>
-                            <td align="left">130.1742603 </td>
-                            <td align="left">1.89 </td>
-                            <td align="left">5685.635995 </td>
-                            <td align="left">27933.77767 </td>
+                            <td class="cell_padding">024</td>
+                            <td class="cell_padding">United Kingdom </td>
+                            <td class="cell_padding">12.195 </td>
+                            <td class="cell_padding">130.1742603 </td>
+                            <td class="cell_padding">1.89 </td>
+                            <td class="cell_padding">5685.635995 </td>
+                            <td class="cell_padding">27933.77767 </td>
                         </tr>
                         <tr>
-                            <td align="left">025</td>
-                            <td>United States </td>
-                            <td align="left">14.191 </td>
-                            <td align="left">89.14911634 </td>
-                            <td align="left">2.002 </td>
-                            <td align="left">12913.71143 </td>
-                            <td align="left">36539.22823 </td>
+                            <td class="cell_padding">025</td>
+                            <td class="cell_padding">United States </td>
+                            <td class="cell_padding">14.191 </td>
+                            <td class="cell_padding">89.14911634 </td>
+                            <td class="cell_padding">2.002 </td>
+                            <td class="cell_padding">12913.71143 </td>
+                            <td class="cell_padding">36539.22823 </td>
                         </tr>
                     </tbody>
                 </table>
@@ -514,7 +537,6 @@
             <div style="float:left; font-weight: bold;">HTML, CSS and JS&nbsp;</div>
             <div style="float:left;">of the lecture Web and Multimedia Engineering</div>
             <div style="float:right;">Taeeun Kim</div>
-        </div>
         </div>
     </footer>
 </body>
