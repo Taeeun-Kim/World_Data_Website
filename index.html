@@ -46,10 +46,15 @@
             height: 100%;
         }
 
-        .footer {
+        #head {
+            position: relative;
+        }
+
+        #footer {
             position: absolute;
-            bottom: -55%;
-            height: 60px;
+            bottom: 0;
+            /* bottom: -59%; */
+            height: 100px;
             width: 56.5%;
             padding: 17px 0;
             text-align: justify;
@@ -73,7 +78,6 @@
         }
 
         .content {
-            position: absolute;
             top: 0;
             bottom: 0;
             right: 0;
@@ -81,6 +85,8 @@
             padding-top: 2%;
             /* zwischen Nav und "World Data Overview" */
         }
+
+
 
         .overview-box {
             margin-top: 2%;
@@ -92,7 +98,8 @@
             margin-bottom: 2%;
         }
 
-        .overview-link:hover {
+        a#overview-link:hover {
+            text-decoration: none;
             color: #4c8715;
         }
 
@@ -111,6 +118,7 @@
 
         .show-hide-list:hover {
             color: #4c8715;
+            text-decoration: none;
         }
 
         .nav {
@@ -234,6 +242,7 @@
 
         #cell_padding {
             padding: 1em;
+            padding-left: 0;
         }
 
         tr:nth-of-type(even) {
@@ -255,7 +264,7 @@
                 margin-right: 10%;
             }
 
-            .footer {
+            #footer {
                 margin-left: 2%;
                 margin-right: 10%;
                 bottom: -140%;
@@ -285,7 +294,7 @@
 <body>
     <header>
         <nav class="nav">
-            <ul class="nav" style="margin-left: 22%; margin-right: 22%;">
+            <ul class="nav" style="margin-left: 22%; margin-right: 21.4%;">
                 <li class="nav-li"><img class="nav-logo" src="Bilder/world_data-logo.svg" /></li> <!-- Logo -->
                 <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A1 - Table</a></li>
                 <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Parse</a></li>
@@ -329,33 +338,35 @@
                     et
                     dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
                     rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. from:
-                    <a class="overview-link" style="color: #88d12d;" href="www.loremipsum.de">www.loremipsum.de</a>
+                    <a id="overview-link" style="color: #88d12d;" href="www.loremipsum.de">www.loremipsum.de</a>
                 </div>
 
-                <ul class="show-hide" style="list-style: none; margin: 0; padding: 0;">
+                <ul class="show-hide" style="list-style: none; margin: 0; padding: 0; margin-bottom: 1.4%;">
                     <span style="float:left">Show/Hide:&nbsp;</span>
                     <a class="show-hide-list" id="birth" style="border-right: 2px solid #a4a4a4;"
                         onclick="hide_show_table(this.id);">birth
                         rate&nbsp;</a><a>&nbsp;</a>
-                    <a id="cell" style="border-right: 2px solid #a4a4a4;" onclick="hide_show_table(this.id);">cell
+                    <a class="show-hide-list" id="cell" style="border-right: 2px solid #a4a4a4;"
+                        onclick="hide_show_table(this.id);">cell
                         phones&nbsp;</a>
-                    <a id="children" style="border-right: 2px solid #a4a4a4;"
+                    <a class="show-hide-list" id="children" style="border-right: 2px solid #a4a4a4;"
                         onclick="hide_show_table(this.id);">children&nbsp;</a>
-                    <a id="electricity" style="border-right: 2px solid #a4a4a4;"
+                    <a class="show-hide-list" id="electricity" style="border-right: 2px solid #a4a4a4;"
                         onclick="hide_show_table(this.id);">electricity&nbsp;</a>
-                    <a id="gdp" onclick="hide_show_table(this.id);">gdp</a>
+                    <a class="show-hide-list" id="gdp" onclick="hide_show_table(this.id);">gdp</a>
                 </ul>
 
                 <table class="table-data">
                     <thead>
-                        <tr style="border-bottom:3px solid #e4e4e4;">
-                            <th id="id_head">id</th>
-                            <th id="name_head">name</th>
-                            <th id="birth_head">birth rate per 1000</th>
-                            <th id="cell_head">cell phones per 100</th>
-                            <th id="children_head">children per woman</th>
-                            <th id="electricity_head">electricity consumption per capita</th>
-                            <th id="gdp_head">gdp_per_capita</th>
+                        <tr style="border-bottom:4px solid #e4e4e4; font-size: 1.3em; font-weight:500;">
+                            <th id="id_head" style="padding-bottom: 1.4%;">ID</th>
+                            <th id="name_head" style="padding-bottom: 1.4%;">Country</th>
+                            <th id="birth_head" style="padding-bottom: 1.4%;">birth rate / 1000</th>
+                            <th id="cell_head" style="padding-bottom: 1.4%;">cell phones / 100</th>
+                            <th id="children_head" style="padding-bottom: 1.4%;">children / woman</th>
+                            <th id="electricity_head" style="padding-bottom: 1.4%;">electricity consumption / capita
+                            </th>
+                            <th id="gdp_head" style="padding-bottom: 1.4%;">gdp / capita</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -594,7 +605,7 @@
 
 
     <footer>
-        <div class="footer" style="border-top:2px solid #cceaad; color: #6d6d6d; padding-top: 0.7%;">
+        <div id="footer" style="border-top:2px solid #cceaad; color: #6d6d6d; padding-top: 0.1.4%;">
             <div style="float:left;">Copylight © 2020 world_data</div>
             <div style="float:right;">This solution has been crated by:</div> </br>
             <div style="float:left;">First course exercise&nbsp;</div>
