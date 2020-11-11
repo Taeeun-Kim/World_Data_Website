@@ -12,7 +12,7 @@
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Installation](#installation)
-- [Usage](#usage)
+- [Check List](#check-list)
 - [License](#license)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -38,9 +38,48 @@ Basic construction for a website as an interface for world_data
 ### Installation
     Extract "WME_Aufgabe1_Kim" ZIP-Archive
 
-## Usage
+## Check List
+- [x] HTML, CSS and JavaScript only
+
+- [x] Only selected libraries, frameworks, etc. include: 
+  - [x] Font Awesome Free (> = 5.15), https://fontawesome.com/free
+  - [x] CSS Reset, https://github.com/murtaugh/HTML5 Reset / blob / master / assets / css / reset.css
+  - [x] Webfont Roboto, https://fonts.google.com/specimen/Roboto
+- [x] File coding / encoding: UTF 8 (and line end Unix LF)
+- [x] Use valid HTML5 and CSS3, validator https://validator.w3.org/ org /)
+- [x] HTML header information: at least title, description, author, keywords
+- [x] HTML5 elements: header, footer, nav
+- [x] Footer: First and last name
+- [x] Note: Don't forget the readme
+- [x] Base font: Roboto, 14px, line spacing: 145%, style: normal
+Icon font "Font Awesome" for nav and column sorting
+Hover for standard links: color and underline
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+- [x] Header with logo and 7 menu items / links
+  - [x] Color gradient in the header
+  - [x] "Clickable" logo with hover effect to colorless / gray
+  - [x] Unordered List (ul) for menu items
+  - [x] "Font Awesome" icon for menu items
+  - [x] Hover of menu items: Short animation for changing the background color
+in the header
+
+- [x] Data display table
+  - [x] Use thead and tbody elements
+  - [x] Min. the following columns: ID and Country, as well as five attributes
+  - [x] Min. 25 countries (ID and Country) with any data (random, CSV, ...)
+  - [x] "Hide" functionality for five attribute columns
+  - [x] Sorting of the table (ascending and descending, without framework / plugin) according to country
+  - [x] "Font Awesome" icons in the Country column
+  - [x] Changing background color of the lines (e.g. # e0e0e0 for even lines)
+- [x] Responsive design (e.g. "mobile first" approach)
+  - [x] three explicit, meaningful threshold values: 
+    - [x] <768 phones
+    - [x] > = 768 and <1200 tablets
+    - [x] > = 1200 desktops: fixed container width (page wrapper) 1170px, centered left right
+- [x] Responsive design: based on the above Threshold values ​​Adjustment of the number of columns for text boxes
+above the table (1/2/3 columns)
+- [x] Responsive design for header / navigation:
+  - [x] Combine / collapse menu items
 
 ## License
 
