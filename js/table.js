@@ -1,4 +1,5 @@
 
+// hide/show fuction for table
 function hide_show_table(col_name) {
     var list_value = document.getElementById(col_name).value;
     if (list_value == "hide") {
@@ -19,18 +20,8 @@ function hide_show_table(col_name) {
         document.getElementById(col_name).value = "hide";
     }
 }
-/*
-function sort(col_name){
-    filterTable = document.querySelector(".table-data");
-    sorted = true;
-}
 
-function sosrtseygijkesgjisae(col_name) {
-    var list_value = document.getElementById(col_name).value;
-    list_value.sort();
-}
-*/
-
+// sorting fuction for Country
 function sortTableToLowerCase() {
     var filterTable, rows, sorted, i, x, y, sortFlag;
     filterTable = document.querySelector(".filterTable");

@@ -334,8 +334,6 @@
                     <a class="show-hide-list" id="children" onclick="hide_show_table(this.id);">children&nbsp;</a>
                     <a class="show-hide-list" id="electricity" onclick="hide_show_table(this.id);">electricity&nbsp;</a>
                     <a class="show-hide-list" id="gdp" style="border: none;" onclick="hide_show_table(this.id);">gdp</a>
-                    <a class="show-hide-list" id="gdp" style="border: none;" onclick="sortTableToLowerCase(this.id);">gdp</a>
-                    <a class="show-hide-list" id="gdp" style="border: none;" onclick="sortTableToUpperCase(this.id);">gdp</a>
                 </ul>
 
                 <div style='overflow-x:auto'>
@@ -344,9 +342,12 @@
                             <tr style="border-bottom:4px solid #e4e4e4; font-size: 1.3em; font-weight:500;">
                                 <th id="id_head" style="padding-bottom: 1.4%;">ID</th>
                                 <th id="name_head" style="padding-bottom: 1.4%;">Country
-
-                                    <i class="fa fa-chevron-up" style="color: #99d675;"></i>
-                                    <i class="fa fa-chevron-down" style="color: #99d675;"></i> </th>
+                                    <a class="show-hide-list" id="gdp" style="border: none;"
+                                        onclick="sortTableToLowerCase(this.id);"><i class="fa fa-chevron-up"
+                                            style="color: #99d675;"></i></a>
+                                    <a class="show-hide-list" id="gdp" style="border: none;"
+                                        onclick="sortTableToUpperCase(this.id);"><i class="fa fa-chevron-down"
+                                            style="color: #99d675;"></i></a> </th>
                                 <th id="birth_head" style="padding-bottom: 1.4%;">birth rate / 1000</th>
                                 <th id="cell_head" style="padding-bottom: 1.4%;">cell phones / 100</th>
                                 <th id="children_head" style="padding-bottom: 1.4%;">children / woman</th>
@@ -357,197 +358,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td id="cell_padding" class="id">002</td>
-                                <td id="cell_padding" class="name">Canada </td>
-                                <td id="cell_padding" class="birth">10.625 </td>
-                                <td id="cell_padding" class="cell">70.70997244 </td>
-                                <td id="cell_padding" class="children">1.668 </td>
-                                <td id="cell_padding" class="electricity">15119.76414 </td>
-                                <td id="cell_padding" class="gdp">25069.86915 </td>
-                            </tr>
-                            <tr>
                                 <td id="cell_padding" class="id">001</td>
-                                <td id="cell_padding" class="name">Brazil </td>
-                                <td id="cell_padding" class="birth">16.405 </td>
-                                <td id="cell_padding" class="cell">90.01936334 </td>
-                                <td id="cell_padding" class="children">1.862 </td>
-                                <td id="cell_padding" class="electricity">2201.808724 </td>
-                                <td id="cell_padding" class="gdp">4424.758692 </td>
-                            </tr>
-                            
-                            <tr>
-                                <td id="cell_padding" class="id">003</td>
-                                <td id="cell_padding" class="name">Chile </td>
-                                <td id="cell_padding" class="birth">15.04 </td>
-                                <td id="cell_padding" class="cell">97.01862561 </td>
-                                <td id="cell_padding" class="children">1.873 </td>
-                                <td id="cell_padding" class="electricity">3276.06449 </td>
-                                <td id="cell_padding" class="gdp">6451.631126 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">004</td>
-                                <td id="cell_padding" class="name">China </td>
-                                <td id="cell_padding" class="birth">13.536 </td>
-                                <td id="cell_padding" class="cell">55.97490921 </td>
-                                <td id="cell_padding" class="children">1.642 </td>
-                                <td id="cell_padding" class="electricity">2632.724637 </td>
-                                <td id="cell_padding" class="gdp">2208.403948 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">005</td>
-                                <td id="cell_padding" class="name">Colombia </td>
-                                <td id="cell_padding" class="birth">20.605 </td>
-                                <td id="cell_padding" class="cell">92.34584564 </td>
-                                <td id="cell_padding" class="children">2.405 </td>
-                                <td id="cell_padding" class="electricity">1041.994137 </td>
-                                <td id="cell_padding" class="gdp">3137.695335 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">006</td>
-                                <td id="cell_padding" class="name">Ecuador </td>
-                                <td id="cell_padding" class="birth">20.989 </td>
-                                <td id="cell_padding" class="cell">92.84925653 </td>
-                                <td id="cell_padding" class="children">2.69 </td>
-                                <td id="cell_padding" class="electricity">1078.038961 </td>
-                                <td id="cell_padding" class="gdp">1692.067197 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">007</td>
-                                <td id="cell_padding" class="name">Egypt </td>
-                                <td id="cell_padding" class="birth">24.83 </td>
-                                <td id="cell_padding" class="cell">69.43661504 </td>
-                                <td id="cell_padding" class="children">2.919 </td>
-                                <td id="cell_padding" class="electricity">1607.918763 </td>
-                                <td id="cell_padding" class="gdp">1911.964501 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">008</td>
-                                <td id="cell_padding" class="name">Finland </td>
-                                <td id="cell_padding" class="birth">11.127 </td>
-                                <td id="cell_padding" class="cell">144.1530224 </td>
-                                <td id="cell_padding" class="children">1.86 </td>
-                                <td id="cell_padding" class="electricity">15241.61194 </td>
-                                <td id="cell_padding" class="gdp">26205.68832 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">009</td>
-                                <td id="cell_padding" class="name">France </td>
-                                <td id="cell_padding" class="birth">12.21 </td>
-                                <td id="cell_padding" class="cell">95.44434226 </td>
-                                <td id="cell_padding" class="children">1.978 </td>
-                                <td id="cell_padding" class="electricity">7339.946832 </td>
-                                <td id="cell_padding" class="gdp">22508.76261 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">010</td>
-                                <td id="cell_padding" class="name">Germany </td>
-                                <td id="cell_padding" class="birth">8.136 </td>
-                                <td id="cell_padding" class="cell">127.4188883 </td>
-                                <td id="cell_padding" class="children">1.376 </td>
-                                <td id="cell_padding" class="electricity">6753.05764 </td>
-                                <td id="cell_padding" class="gdp">24368.19561 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">011</td>
-                                <td id="cell_padding" class="name">Iceland </td>
-                                <td id="cell_padding" class="birth">14.738 </td>
-                                <td id="cell_padding" class="cell">107.6604456 </td>
-                                <td id="cell_padding" class="children">2.123 </td>
-                                <td id="cell_padding" class="electricity">51259.18763 </td>
-                                <td id="cell_padding" class="gdp">35310.97441 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">012</td>
-                                <td id="cell_padding" class="name">Iraq </td>
-                                <td id="cell_padding" class="birth">31.585 </td>
-                                <td id="cell_padding" class="cell">65.47478839 </td>
-                                <td id="cell_padding" class="children">4.276 </td>
-                                <td id="cell_padding" class="electricity">1086.323768 </td>
-                                <td id="cell_padding" class="gdp">752.1833548 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">013</td>
-                                <td id="cell_padding" class="name">Japan </td>
-                                <td id="cell_padding" class="birth">8.201 </td>
-                                <td id="cell_padding" class="cell">91.8955442 </td>
-                                <td id="cell_padding" class="children">1.359 </td>
-                                <td id="cell_padding" class="electricity">7838.005685 </td>
-                                <td id="cell_padding" class="gdp">38242.02429 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">014</td>
-                                <td id="cell_padding" class="name">Kazakhstan </td>
-                                <td id="cell_padding" class="birth">19.775 </td>
-                                <td id="cell_padding" class="cell">107.7147692 </td>
-                                <td id="cell_padding" class="children">2.537 </td>
-                                <td id="cell_padding" class="electricity">4447.142293 </td>
-                                <td id="cell_padding" class="gdp">2345.86415 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">015</td>
-                                <td id="cell_padding" class="name">Mexico </td>
-                                <td id="cell_padding" class="birth">19.091 </td>
-                                <td id="cell_padding" class="cell">74.25785259 </td>
-                                <td id="cell_padding" class="children">2.313 </td>
-                                <td id="cell_padding" class="electricity">1869.82352 </td>
-                                <td id="cell_padding" class="gdp">5875.619997 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">016</td>
-                                <td id="cell_padding" class="name">New Zealand </td>
-                                <td id="cell_padding" class="birth">13.831 </td>
-                                <td id="cell_padding" class="cell">108.7301521 </td>
-                                <td id="cell_padding" class="children">2.125 </td>
-                                <td id="cell_padding" class="electricity">9375.550304 </td>
-                                <td id="cell_padding" class="gdp">14778.16393 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">017</td>
-                                <td id="cell_padding" class="name">Nigeria </td>
-                                <td id="cell_padding" class="birth">40.134 </td>
-                                <td id="cell_padding" class="cell">48.23561006 </td>
-                                <td id="cell_padding" class="children">6.021 </td>
-                                <td id="cell_padding" class="electricity">119.8151486 </td>
-                                <td id="cell_padding" class="gdp">513.5003377 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">018</td>
-                                <td id="cell_padding" class="name">Peru </td>
-                                <td id="cell_padding" class="birth">21.342 </td>
-                                <td id="cell_padding" class="cell">85.86901405 </td>
-                                <td id="cell_padding" class="children">2.545 </td>
-                                <td id="cell_padding" class="electricity">1043.052601 </td>
-                                <td id="cell_padding" class="gdp">2955.186222 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">019</td>
-                                <td id="cell_padding" class="name">Russia </td>
-                                <td id="cell_padding" class="birth">10.828 </td>
-                                <td id="cell_padding" class="cell">161.1162887 </td>
-                                <td id="cell_padding" class="children">1.537 </td>
-                                <td id="cell_padding" class="electricity">6132.978648 </td>
-                                <td id="cell_padding" class="gdp">2806.41483 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">020</td>
-                                <td id="cell_padding" class="name">Saudi Arabia </td>
-                                <td id="cell_padding" class="birth">23.569 </td>
-                                <td id="cell_padding" class="cell">167.3474553 </td>
-                                <td id="cell_padding" class="children">2.898 </td>
-                                <td id="cell_padding" class="electricity">7430.743897 </td>
-                                <td id="cell_padding" class="gdp">9294.355996 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">021</td>
-                                <td id="cell_padding" class="name">South Africa </td>
-                                <td id="cell_padding" class="birth">22.113 </td>
-                                <td id="cell_padding" class="cell">93.33587369 </td>
-                                <td id="cell_padding" class="children">2.5 </td>
-                                <td id="cell_padding" class="electricity">4532.021902 </td>
-                                <td id="cell_padding" class="gdp">3697.67368 </td>
-                            </tr>
-                            <tr>
-                                <td id="cell_padding" class="id">022</td>
                                 <td id="cell_padding" class="name">Sweden </td>
                                 <td id="cell_padding" class="birth">11.72 </td>
                                 <td id="cell_padding" class="cell">112.1241184 </td>
@@ -556,7 +367,61 @@
                                 <td id="cell_padding" class="gdp">30885.45914 </td>
                             </tr>
                             <tr>
-                                <td id="cell_padding" class="id">023</td>
+                                <td id="cell_padding" class="id">002</td>
+                                <td id="cell_padding" class="name">Finland </td>
+                                <td id="cell_padding" class="birth">11.127 </td>
+                                <td id="cell_padding" class="cell">144.1530224 </td>
+                                <td id="cell_padding" class="children">1.86 </td>
+                                <td id="cell_padding" class="electricity">15241.61194 </td>
+                                <td id="cell_padding" class="gdp">26205.68832 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">003</td>
+                                <td id="cell_padding" class="name">Canada </td>
+                                <td id="cell_padding" class="birth">10.625 </td>
+                                <td id="cell_padding" class="cell">70.70997244 </td>
+                                <td id="cell_padding" class="children">1.668 </td>
+                                <td id="cell_padding" class="electricity">15119.76414 </td>
+                                <td id="cell_padding" class="gdp">25069.86915 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">004</td>
+                                <td id="cell_padding" class="name">Brazil </td>
+                                <td id="cell_padding" class="birth">16.405 </td>
+                                <td id="cell_padding" class="cell">90.01936334 </td>
+                                <td id="cell_padding" class="children">1.862 </td>
+                                <td id="cell_padding" class="electricity">2201.808724 </td>
+                                <td id="cell_padding" class="gdp">4424.758692 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">005</td>
+                                <td id="cell_padding" class="name">New Zealand </td>
+                                <td id="cell_padding" class="birth">13.831 </td>
+                                <td id="cell_padding" class="cell">108.7301521 </td>
+                                <td id="cell_padding" class="children">2.125 </td>
+                                <td id="cell_padding" class="electricity">9375.550304 </td>
+                                <td id="cell_padding" class="gdp">14778.16393 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">006</td>
+                                <td id="cell_padding" class="name">United Kingdom </td>
+                                <td id="cell_padding" class="birth">12.195 </td>
+                                <td id="cell_padding" class="cell">130.1742603 </td>
+                                <td id="cell_padding" class="children">1.89 </td>
+                                <td id="cell_padding" class="electricity">5685.635995 </td>
+                                <td id="cell_padding" class="gdp">27933.77767 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">007</td>
+                                <td id="cell_padding" class="name">Chile </td>
+                                <td id="cell_padding" class="birth">15.04 </td>
+                                <td id="cell_padding" class="cell">97.01862561 </td>
+                                <td id="cell_padding" class="children">1.873 </td>
+                                <td id="cell_padding" class="electricity">3276.06449 </td>
+                                <td id="cell_padding" class="gdp">6451.631126 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">008</td>
                                 <td id="cell_padding" class="name">United Arab Emirates</td>
                                 <td id="cell_padding" class="birth">14.027 </td>
                                 <td id="cell_padding" class="cell">153.7997194 </td>
@@ -565,13 +430,148 @@
                                 <td id="cell_padding" class="gdp">22507.00157 </td>
                             </tr>
                             <tr>
+                                <td id="cell_padding" class="id">009</td>
+                                <td id="cell_padding" class="name">Colombia </td>
+                                <td id="cell_padding" class="birth">20.605 </td>
+                                <td id="cell_padding" class="cell">92.34584564 </td>
+                                <td id="cell_padding" class="children">2.405 </td>
+                                <td id="cell_padding" class="electricity">1041.994137 </td>
+                                <td id="cell_padding" class="gdp">3137.695335 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">010</td>
+                                <td id="cell_padding" class="name">Ecuador </td>
+                                <td id="cell_padding" class="birth">20.989 </td>
+                                <td id="cell_padding" class="cell">92.84925653 </td>
+                                <td id="cell_padding" class="children">2.69 </td>
+                                <td id="cell_padding" class="electricity">1078.038961 </td>
+                                <td id="cell_padding" class="gdp">1692.067197 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">011</td>
+                                <td id="cell_padding" class="name">France </td>
+                                <td id="cell_padding" class="birth">12.21 </td>
+                                <td id="cell_padding" class="cell">95.44434226 </td>
+                                <td id="cell_padding" class="children">1.978 </td>
+                                <td id="cell_padding" class="electricity">7339.946832 </td>
+                                <td id="cell_padding" class="gdp">22508.76261 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">012</td>
+                                <td id="cell_padding" class="name">Germany </td>
+                                <td id="cell_padding" class="birth">8.136 </td>
+                                <td id="cell_padding" class="cell">127.4188883 </td>
+                                <td id="cell_padding" class="children">1.376 </td>
+                                <td id="cell_padding" class="electricity">6753.05764 </td>
+                                <td id="cell_padding" class="gdp">24368.19561 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">013</td>
+                                <td id="cell_padding" class="name">Iceland </td>
+                                <td id="cell_padding" class="birth">14.738 </td>
+                                <td id="cell_padding" class="cell">107.6604456 </td>
+                                <td id="cell_padding" class="children">2.123 </td>
+                                <td id="cell_padding" class="electricity">51259.18763 </td>
+                                <td id="cell_padding" class="gdp">35310.97441 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">014</td>
+                                <td id="cell_padding" class="name">Egypt </td>
+                                <td id="cell_padding" class="birth">24.83 </td>
+                                <td id="cell_padding" class="cell">69.43661504 </td>
+                                <td id="cell_padding" class="children">2.919 </td>
+                                <td id="cell_padding" class="electricity">1607.918763 </td>
+                                <td id="cell_padding" class="gdp">1911.964501 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">015</td>
+                                <td id="cell_padding" class="name">Japan </td>
+                                <td id="cell_padding" class="birth">8.201 </td>
+                                <td id="cell_padding" class="cell">91.8955442 </td>
+                                <td id="cell_padding" class="children">1.359 </td>
+                                <td id="cell_padding" class="electricity">7838.005685 </td>
+                                <td id="cell_padding" class="gdp">38242.02429 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">016</td>
+                                <td id="cell_padding" class="name">China </td>
+                                <td id="cell_padding" class="birth">13.536 </td>
+                                <td id="cell_padding" class="cell">55.97490921 </td>
+                                <td id="cell_padding" class="children">1.642 </td>
+                                <td id="cell_padding" class="electricity">2632.724637 </td>
+                                <td id="cell_padding" class="gdp">2208.403948 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">017</td>
+                                <td id="cell_padding" class="name">Kazakhstan </td>
+                                <td id="cell_padding" class="birth">19.775 </td>
+                                <td id="cell_padding" class="cell">107.7147692 </td>
+                                <td id="cell_padding" class="children">2.537 </td>
+                                <td id="cell_padding" class="electricity">4447.142293 </td>
+                                <td id="cell_padding" class="gdp">2345.86415 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">018</td>
+                                <td id="cell_padding" class="name">Mexico </td>
+                                <td id="cell_padding" class="birth">19.091 </td>
+                                <td id="cell_padding" class="cell">74.25785259 </td>
+                                <td id="cell_padding" class="children">2.313 </td>
+                                <td id="cell_padding" class="electricity">1869.82352 </td>
+                                <td id="cell_padding" class="gdp">5875.619997 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">019</td>
+                                <td id="cell_padding" class="name">Nigeria </td>
+                                <td id="cell_padding" class="birth">40.134 </td>
+                                <td id="cell_padding" class="cell">48.23561006 </td>
+                                <td id="cell_padding" class="children">6.021 </td>
+                                <td id="cell_padding" class="electricity">119.8151486 </td>
+                                <td id="cell_padding" class="gdp">513.5003377 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">020</td>
+                                <td id="cell_padding" class="name">South Africa </td>
+                                <td id="cell_padding" class="birth">22.113 </td>
+                                <td id="cell_padding" class="cell">93.33587369 </td>
+                                <td id="cell_padding" class="children">2.5 </td>
+                                <td id="cell_padding" class="electricity">4532.021902 </td>
+                                <td id="cell_padding" class="gdp">3697.67368 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">021</td>
+                                <td id="cell_padding" class="name">Peru </td>
+                                <td id="cell_padding" class="birth">21.342 </td>
+                                <td id="cell_padding" class="cell">85.86901405 </td>
+                                <td id="cell_padding" class="children">2.545 </td>
+                                <td id="cell_padding" class="electricity">1043.052601 </td>
+                                <td id="cell_padding" class="gdp">2955.186222 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">022</td>
+                                <td id="cell_padding" class="name">Russia </td>
+                                <td id="cell_padding" class="birth">10.828 </td>
+                                <td id="cell_padding" class="cell">161.1162887 </td>
+                                <td id="cell_padding" class="children">1.537 </td>
+                                <td id="cell_padding" class="electricity">6132.978648 </td>
+                                <td id="cell_padding" class="gdp">2806.41483 </td>
+                            </tr>
+                            <tr>
+                                <td id="cell_padding" class="id">023</td>
+                                <td id="cell_padding" class="name">Saudi Arabia </td>
+                                <td id="cell_padding" class="birth">23.569 </td>
+                                <td id="cell_padding" class="cell">167.3474553 </td>
+                                <td id="cell_padding" class="children">2.898 </td>
+                                <td id="cell_padding" class="electricity">7430.743897 </td>
+                                <td id="cell_padding" class="gdp">9294.355996 </td>
+                            </tr>
+                            <tr>
                                 <td id="cell_padding" class="id">024</td>
-                                <td id="cell_padding" class="name">United Kingdom </td>
-                                <td id="cell_padding" class="birth">12.195 </td>
-                                <td id="cell_padding" class="cell">130.1742603 </td>
-                                <td id="cell_padding" class="children">1.89 </td>
-                                <td id="cell_padding" class="electricity">5685.635995 </td>
-                                <td id="cell_padding" class="gdp">27933.77767 </td>
+                                <td id="cell_padding" class="name">Iraq </td>
+                                <td id="cell_padding" class="birth">31.585 </td>
+                                <td id="cell_padding" class="cell">65.47478839 </td>
+                                <td id="cell_padding" class="children">4.276 </td>
+                                <td id="cell_padding" class="electricity">1086.323768 </td>
+                                <td id="cell_padding" class="gdp">752.1833548 </td>
                             </tr>
                             <tr>
                                 <td id="cell_padding" class="id">025</td>
