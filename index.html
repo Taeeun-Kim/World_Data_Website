@@ -39,6 +39,10 @@
             margin: 0;
             padding: 0;
             /* 추가한것 */
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 145%;
         }
 
         body {
@@ -190,47 +194,7 @@
             overflow: hidden;
         }
 
-        .dropbtn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #5e0a0a;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #cd2626
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: #3e8e41;
-        }
 
         .table-data {
             border-collapse: collapse;
@@ -253,6 +217,36 @@
             background-color: #e4e4e4;
         }
 
+        .topnav {
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(to bottom, #d2d2d2, #e0e0e0, #efefef);
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .topnav #myLinks {
+            display: none;
+        }
+
+        .topnav a {
+            color: #6d6d6d;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .topnav a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav a:hover {
+            background-color: #cccccc;;
+            color: black;
+        } 
+
         @media all and (max-width:767px) {
             .nav {
                 display: none;
@@ -267,15 +261,16 @@
                 margin-right: 10%;
             }
 
-            #footer {
-                margin-left: 2%;
-                margin-right: 10%;
-                bottom: -140%;
+            .footer {
+                width: 90%;
+                margin: 5%;
+                padding: 0;
+                text-align: left;
             }
         }
 
         @media all and (min-width: 767px) and (max-width:1020px) {
-            .nav-button {
+            .topnav {
                 display: none;
             }
 
@@ -285,7 +280,7 @@
         }
 
         @media all and (min-width:1020px) {
-            .nav-button {
+            .topnav {
                 display: none;
             }
         }
@@ -296,6 +291,7 @@
 
 <body>
     <header>
+        <!-- Top Navigation Menu for Desktop -->
         <nav class="nav">
             <ul class="nav" style="margin-left: 22%; margin-right: 21.4%;">
                 <li class="nav-li"><img class="nav-logo" src="Bilder/world_data-logo.svg" /></li> <!-- Logo -->
@@ -308,6 +304,7 @@
                 <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A5 - 3D</a></li>
             </ul>
         </nav>
+        <!--
         <nav class="nav-button">
             <img class="nav-logo" style="float: left;" src="Bilder/world_data-logo.svg" />
             <div class="dropdown" style="float: right;">
@@ -318,8 +315,35 @@
                     <a href="#">Link 3</a>
                 </div>
             </div>
-
         </nav>
+-->
+        <!-- Top Navigation Menu for Mobile -->
+        <div class="topnav">
+            <a href="#home" class="active"><img class="nav-logo" src="Bilder/world_data-logo.svg"/></a>
+            <div id="myLinks" style="background:white">
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A1 - Table</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Parse</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Save</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Print</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A3 - REST</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A4 - Vis</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A5 - 3D</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
     </header>
 
     <div class="box">
@@ -346,7 +370,8 @@
 
                 <ul class="show-hide" style="list-style: none; margin: 0; padding: 0; margin-bottom: 1.4%;">
                     <span style="float:left">Show/Hide:&nbsp;</span>
-                    <a class="show-hide-list" id="birth" onclick="hide_show_table(this.id);">birth rate&nbsp;</a><a>&nbsp;</a>
+                    <a class="show-hide-list" id="birth" onclick="hide_show_table(this.id);">birth
+                        rate&nbsp;</a><a>&nbsp;</a>
                     <a class="show-hide-list" id="cell" onclick="hide_show_table(this.id);">cell phones&nbsp;</a>
                     <a class="show-hide-list" id="children" onclick="hide_show_table(this.id);">children&nbsp;</a>
                     <a class="show-hide-list" id="electricity" onclick="hide_show_table(this.id);">electricity&nbsp;</a>
@@ -598,8 +623,6 @@
             </main>
         </div>
     </div>
-
-
 
     <footer class="footer">
         <div style="border-top:2px solid #cceaad; color: #6d6d6d; padding-top: 1.2%;">
