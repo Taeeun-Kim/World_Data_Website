@@ -141,10 +141,13 @@
             // Die Funktion soll einen boolean Wert zurück liefern (Result), je nachdem ob das Schreiben erfolgreich war (true) oder nicht (false)
             $is_file_exist = file_exists('../data/world_data.xml');
             if ($is_file_exist) {
-                echo '1'; // TRUE
+                echo 'XML Savestatus: erfolgreich (1)'; // TRUE
             } else {
-                echo '0'; // FALSE
+                echo 'XML Savestatus: gescheitert (0)'; // FALSE
             }
+        }
+        public function printXML(){
+
         }
     }
     $method = new WorldDataParser;
