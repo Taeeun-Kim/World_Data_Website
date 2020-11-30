@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Countries>
+  <Country>
+    <id><![CDATA[001]]></id>
+    <name><![CDATA[Brazil              ]]></name>
+    <birthrateper1000><![CDATA[16.405             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[90.01936334        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.862             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[2201.808724                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[4424.758692   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-1.520402823         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[8.228535058     ]]></inflationannual>
+    <internetuserper100><![CDATA[39.22                ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[74             ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.615173655                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[-14.235004000]]></gpslat>
+    <gpslong><![CDATA[-51.925280000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[002]]></id>
+    <name><![CDATA[Canada              ]]></name>
+    <birthrateper1000><![CDATA[10.625             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[70.70997244        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.668             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[15119.76414                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[25069.86915   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-3.953353186         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[2.944408564     ]]></inflationannual>
+    <internetuserper100><![CDATA[80.17086651          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[80.9           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.415710422                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[56.130366000 ]]></gpslat>
+    <gpslong><![CDATA[-106.346771000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[003]]></id>
+    <name><![CDATA[Chile               ]]></name>
+    <birthrateper1000><![CDATA[15.04              ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[97.01862561        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.873             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[3276.06449                        ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[6451.631126   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-2.610485847         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[7.47050527      ]]></inflationannual>
+    <internetuserper100><![CDATA[38.8                 ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[78.8           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[3.064076139                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[-35.675147000]]></gpslat>
+    <gpslong><![CDATA[71.542969000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[004]]></id>
+    <name><![CDATA[China               ]]></name>
+    <birthrateper1000><![CDATA[13.536             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[55.97490921        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.642             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[2632.724637                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[2208.403948   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[8.648414427          ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[6.684109668     ]]></inflationannual>
+    <internetuserper100><![CDATA[28.97659939          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[75.6           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[2.24110794                         ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[35.86166000  ]]></gpslat>
+    <gpslong><![CDATA[104.19539700]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[005]]></id>
+    <name><![CDATA[Colombia            ]]></name>
+    <birthrateper1000><![CDATA[20.605             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[92.34584564        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.405             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[1041.994137                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[3137.695335   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[0.2081538559         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[3.666941163     ]]></inflationannual>
+    <internetuserper100><![CDATA[30                   ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[75.3           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[3.833780372                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[4.570868000  ]]></gpslat>
+    <gpslong><![CDATA[-74.297333000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[006]]></id>
+    <name><![CDATA[Ecuador             ]]></name>
+    <birthrateper1000><![CDATA[20.989             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[92.84925653        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.69              ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[1078.038961                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[1692.067197   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-1.079538461         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[7.595866872     ]]></inflationannual>
+    <internetuserper100><![CDATA[24.6                 ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[74.1           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[3.746501879                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[-1.831239000 ]]></gpslat>
+    <gpslong><![CDATA[-78.183406000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[007]]></id>
+    <name><![CDATA[Egypt               ]]></name>
+    <birthrateper1000><![CDATA[24.83              ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[69.43661504        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.919             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[1607.918763                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[1911.964501   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[2.856917581          ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[10.10750976     ]]></inflationannual>
+    <internetuserper100><![CDATA[24.28                ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[70.2           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[2.137305699                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[26.820553000 ]]></gpslat>
+    <gpslong><![CDATA[30.802498000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[008]]></id>
+    <name><![CDATA[Finland             ]]></name>
+    <birthrateper1000><![CDATA[11.127             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[144.1530224        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.86              ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[15241.61194                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[26205.68832   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-8.791558776         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[0.4277308694    ]]></inflationannual>
+    <internetuserper100><![CDATA[82.53133098          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[79.7           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.501872268                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[61.924110000 ]]></gpslat>
+    <gpslong><![CDATA[25.748151000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[009]]></id>
+    <name><![CDATA[France              ]]></name>
+    <birthrateper1000><![CDATA[12.21              ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[95.44434226        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.978             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[7339.946832                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[22508.76261   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-3.264056248         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[1.050366124     ]]></inflationannual>
+    <internetuserper100><![CDATA[69.0633593           ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[81             ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[2.55313249                         ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[46.22763800  ]]></gpslat>
+    <gpslong><![CDATA[2.21374900]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[010]]></id>
+    <name><![CDATA[Germany             ]]></name>
+    <birthrateper1000><![CDATA[8.136              ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[127.4188883        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.376             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[6753.05764                        ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[24368.19561   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-4.886323581         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[0.5959234322    ]]></inflationannual>
+    <internetuserper100><![CDATA[79.48523153          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[80             ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.438871341                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[51.165691000 ]]></gpslat>
+    <gpslong><![CDATA[10.451526000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[011]]></id>
+    <name><![CDATA[Iceland             ]]></name>
+    <birthrateper1000><![CDATA[14.738             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[107.6604456        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.123             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[51259.18763                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[35310.97441   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-6.990418561         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[6.900703626     ]]></inflationannual>
+    <internetuserper100><![CDATA[92.13686385          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[82.2           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[0.0820538039                       ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[64.9630510000]]></gpslat>
+    <gpslong><![CDATA[-19.0208350000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[012]]></id>
+    <name><![CDATA[Iraq                ]]></name>
+    <birthrateper1000><![CDATA[31.585             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[65.47478839        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[4.276             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[1086.323768                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[752.1833548   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[1.141874289          ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[25.22442136     ]]></inflationannual>
+    <internetuserper100><![CDATA[1.047516616          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[68.1           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[4.621383386                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[33.223191000 ]]></gpslat>
+    <gpslong><![CDATA[43.679291000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[013]]></id>
+    <name><![CDATA[Japan               ]]></name>
+    <birthrateper1000><![CDATA[8.201              ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[91.8955442         ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.359             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[7838.005685                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[38242.02429   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-6.180260885         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[-2.08543109     ]]></inflationannual>
+    <internetuserper100><![CDATA[77.38468963          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[82.8           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.019445017                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[36.204824000 ]]></gpslat>
+    <gpslong><![CDATA[138.252924000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[014]]></id>
+    <name><![CDATA[Kazakhstan          ]]></name>
+    <birthrateper1000><![CDATA[19.775             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[107.7147692        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.537             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[4447.142293                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[2345.86415    ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-1.437812068         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[19.5422854      ]]></inflationannual>
+    <internetuserper100><![CDATA[17.91457965          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[66.6           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.105385125                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[48.019573000 ]]></gpslat>
+    <gpslong><![CDATA[66.923684000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[015]]></id>
+    <name><![CDATA[Mexico              ]]></name>
+    <birthrateper1000><![CDATA[19.091             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[74.25785259        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.313             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[1869.82352                        ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[5875.619997   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-7.417438847         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[4.033645258     ]]></inflationannual>
+    <internetuserper100><![CDATA[26.34                ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[75.5           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[0.5396656609                       ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[23.6345010000]]></gpslat>
+    <gpslong><![CDATA[-102.5527840000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[016]]></id>
+    <name><![CDATA[New Zealand         ]]></name>
+    <birthrateper1000><![CDATA[13.831             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[108.7301521        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.125             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[9375.550304                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[14778.16393   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-1.552308788         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[3.486782259     ]]></inflationannual>
+    <internetuserper100><![CDATA[79.82609287          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[80.3           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.140562366                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[-40.900557000]]></gpslat>
+    <gpslong><![CDATA[174.885971000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[017]]></id>
+    <name><![CDATA[Nigeria             ]]></name>
+    <birthrateper1000><![CDATA[40.134             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[48.23561006        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[6.021             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[119.8151486                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[513.5003377   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[4.3526073            ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[9.313146383     ]]></inflationannual>
+    <internetuserper100><![CDATA[20                   ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[58.5           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[0.8924302789                       ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[9.0819990000 ]]></gpslat>
+    <gpslong><![CDATA[8.6752770000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[018]]></id>
+    <name><![CDATA[Peru                ]]></name>
+    <birthrateper1000><![CDATA[21.342             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[85.86901405        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.545             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[1043.052601                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[2955.186222   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-0.2228977721        ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[4.49134447      ]]></inflationannual>
+    <internetuserper100><![CDATA[31.4                 ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[76.7           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.348875763                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[-9.189967000 ]]></gpslat>
+    <gpslong><![CDATA[-75.015152000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[019]]></id>
+    <name><![CDATA[Russia              ]]></name>
+    <birthrateper1000><![CDATA[10.828             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[161.1162887        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.537             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[6132.978648                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[2806.41483    ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-7.749103694         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[11.60398093     ]]></inflationannual>
+    <internetuserper100><![CDATA[29.23584146          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[68.3           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[4.36259042                         ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[61.52401000  ]]></gpslat>
+    <gpslong><![CDATA[105.31875600]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[020]]></id>
+    <name><![CDATA[Saudi Arabia        ]]></name>
+    <birthrateper1000><![CDATA[23.569             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[167.3474553        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.898             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[7430.743897                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[9294.355996   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-2.242127204         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[14.36222827     ]]></inflationannual>
+    <internetuserper100><![CDATA[38                   ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[77.6           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[10.95653405                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[23.88594200  ]]></gpslat>
+    <gpslong><![CDATA[45.07916200]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[021]]></id>
+    <name><![CDATA[South Africa        ]]></name>
+    <birthrateper1000><![CDATA[22.113             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[93.33587369        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.5               ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[4532.021902                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[3697.67368    ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-2.732989408         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[7.861608575     ]]></inflationannual>
+    <internetuserper100><![CDATA[10.08745979          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[55.8           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.394530379                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[-30.559482000]]></gpslat>
+    <gpslong><![CDATA[22.937506000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[022]]></id>
+    <name><![CDATA[Sweden              ]]></name>
+    <birthrateper1000><![CDATA[11.72              ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[112.1241184        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.937             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[14143.01101                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[30885.45914   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-5.976535294         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[1.022227082     ]]></inflationannual>
+    <internetuserper100><![CDATA[91.12326108          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[81.2           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[1.247701873                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[60.128161000 ]]></gpslat>
+    <gpslong><![CDATA[18.643501000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[023]]></id>
+    <name><![CDATA[United Arab Emirates]]></name>
+    <birthrateper1000><![CDATA[14.027             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[153.7997194        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.903             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[9998.291079                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[22507.00157   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-11.99171952         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[8.549032358     ]]></inflationannual>
+    <internetuserper100><![CDATA[64                   ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[76.1           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[5.834881976                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[23.424076000 ]]></gpslat>
+    <gpslong><![CDATA[53.847818000]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[024]]></id>
+    <name><![CDATA[United Kingdom      ]]></name>
+    <birthrateper1000><![CDATA[12.195             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[130.1742603        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[1.89              ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[5685.635995                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[27933.77767   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-5.019251823         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[2.861406642     ]]></inflationannual>
+    <internetuserper100><![CDATA[77.79971962          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[79.7           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[2.667209048                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[52.355517700 ]]></gpslat>
+    <gpslong><![CDATA[-1.174319700]]></gpslong>
+  </Country>
+  <Country>
+    <id><![CDATA[025]]></id>
+    <name><![CDATA[United States       ]]></name>
+    <birthrateper1000><![CDATA[14.191             ]]></birthrateper1000>
+    <cellphonesper100><![CDATA[89.14911634        ]]></cellphonesper100>
+    <childrenperwoman><![CDATA[2.002             ]]></childrenperwoman>
+    <electricityconsumptionpercapita><![CDATA[12913.71143                       ]]></electricityconsumptionpercapita>
+    <gdppercapita><![CDATA[36539.22823   ]]></gdppercapita>
+    <gdppercapitagrowth><![CDATA[-4.342271218         ]]></gdppercapitagrowth>
+    <inflationannual><![CDATA[1.152326348     ]]></inflationannual>
+    <internetuserper100><![CDATA[71.21181627          ]]></internetuserper100>
+    <lifeexpectancy><![CDATA[78.3           ]]></lifeexpectancy>
+    <militaryexpenditurepercentofgdp><![CDATA[4.822730027                        ]]></militaryexpenditurepercentofgdp>
+    <gpslat><![CDATA[37.090240000 ]]></gpslat>
+    <gpslong><![CDATA[-95.712891000]]></gpslong>
+  </Country>
+</Countries>

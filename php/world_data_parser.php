@@ -20,7 +20,7 @@
             echo "Array <br/>";
             echo "( <br/>";
             $row = -1;
-            if (($handle = fopen("http://localhost/World_Data_Website_Copy/data/world_data_v1.csv", "r")) !== FALSE) {
+            if (($handle = fopen("../data/world_data_v1.csv", "r")) !== FALSE) {
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
                     $num = count($data);
                     if ($row == -1) { // started from -1, because "Array" started from 0 in the document
@@ -107,32 +107,28 @@
 
         public function saveXML()
         {
-            $rows = array_map('str_getcsv', file('/Users/taeeun/Sites/World_Data_Website_Copy/data/world_data_v1.csv'));
+            $rows = array_map('str_getcsv', file('../data/world_data_v1.csv')); // ./ = /php and ../ = /World_Data_Website_Copy
             $header = array_shift($rows);
             $data = array();
             foreach ($rows as $row) {
                 $data[] = array_combine($header, $row);
             }
-
-            // Process Data if need be
             foreach ($data as $key => $val) {
-                // Processing here
             }
 
-            //Creates XML string and XML document using the DOM 
             $xml = new DomDocument('1.0', 'UTF-8');
 
-            //Add root node
-            $root = $xml->createElement('root');
+            // Add root node
+            $root = $xml->createElement('Countries');
             $xml->appendChild($root);
 
             // Add child nodes
             foreach ($data as $key => $val) {
-                $entry = $xml->createElement('entry');
+                $entry = $xml->createElement('Country');
                 $root->appendChild($entry);
 
                 foreach ($val as $field_name => $field_value) {
-                    $field_name = preg_replace("/[^A-Za-z0-9]/", '', $field_name); // preg_replace has the allowed characters
+                    $field_name = preg_replace("/[^A-Za-z0-9]/", '', $field_name);
                     $name = $entry->appendChild($xml->createElement($field_name));
                     $name->appendChild($xml->createCDATASection($field_value));
                 }
@@ -140,18 +136,18 @@
 
             // Set the formatOutput attribute of xml to true
             $xml->formatOutput = true;
+            $xml->save('../data/world_data.xml'); // save as file
 
-            // Output to screen
-            //header('Content-Type: text/xml');
-            //echo $xml->saveXML();
-
-            // Save as file
-            $xml->save('xml-import.xml'); // save as file
+            // Die Funktion soll einen boolean Wert zurück liefern (Result), je nachdem ob das Schreiben erfolgreich war (true) oder nicht (false)
+            $is_file_exist = file_exists('../data/world_data.xml');
+            if ($is_file_exist) {
+                echo '1'; // TRUE
+            } else {
+                echo '0'; // FALSE
+            }
         }
     }
     $method = new WorldDataParser;
-    //$method->parseCSV();
-    //$method->saveXML();
     ?>
 </body>
 
