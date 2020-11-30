@@ -15,7 +15,7 @@
     <?php
     set_include_path('/Users/taeeun/Sites/World_Data_Website_Copy'); // select path
     require 'php/world_data_parser.php'; // world_data_parser.php aufrufen
-    $method->parseCSV();
+    $method->saveXML();
     ?>
 </body>
 

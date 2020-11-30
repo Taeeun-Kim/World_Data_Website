@@ -13,10 +13,9 @@
 
 <body>
     <?php
-    //class WorldDataParser
-    //{
-        //public function parseCSV()
-        function parseCSV()
+    class WorldDataParser
+    {
+        public function parseCSV() // A2 1) Serverseitiges Parsen einer CSV Datei
         {
             echo "Array <br/>";
             echo "( <br/>";
@@ -104,8 +103,56 @@
             }
             echo ") <br/>";
         }
-    //}
-    parseCSV();
+
+
+        public function saveXML()
+        {
+            $rows = array_map('str_getcsv', file('/Users/taeeun/Sites/World_Data_Website_Copy/data/world_data_v1.csv'));
+            $header = array_shift($rows);
+            $data = array();
+            foreach ($rows as $row) {
+                $data[] = array_combine($header, $row);
+            }
+
+            // Process Data if need be
+            foreach ($data as $key => $val) {
+                // Processing here
+            }
+
+            //Creates XML string and XML document using the DOM 
+            $xml = new DomDocument('1.0', 'UTF-8');
+
+            //Add root node
+            $root = $xml->createElement('root');
+            $xml->appendChild($root);
+
+            // Add child nodes
+            foreach ($data as $key => $val) {
+                $entry = $xml->createElement('entry');
+                $root->appendChild($entry);
+
+                foreach ($val as $field_name => $field_value) {
+                    $field_name = preg_replace("/[^A-Za-z0-9]/", '', $field_name); // preg_replace has the allowed characters
+                    $name = $entry->appendChild($xml->createElement($field_name));
+                    $name->appendChild($xml->createCDATASection($field_value));
+                }
+            }
+
+            // Set the formatOutput attribute of xml to true
+            $xml->formatOutput = true;
+
+            // Output to screen
+            //header('Content-Type: text/xml');
+            //echo $xml->saveXML();
+
+            // Save as file
+            $xml->save('xml-import.xml'); // save as file
+        }
+    }
+    $method = new WorldDataParser;
+    //$method->parseCSV();
+    //$method->saveXML();
     ?>
 </body>
+
 </html>
