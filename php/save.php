@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html lang="de">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/table.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>save</title>
-</head>
+include("../php/world_data_parser.php");
+$file = "../data/world_data_v1.csv";
 
-<body>
-    <?php
-    set_include_path('../'); // select path
-    require 'php/world_data_parser.php'; // world_data_parser.php aufrufen
-    $method->saveXML();
-    ?>
-</body>
+$myParser = new WorldDataParser();
+$array = $myParser->parseCSV($file);
+$value = $myParser->saveXML($array);
 
-</html>
+$is_file_exist = file_exists('../data/world_data.xml');
+
+if ($is_file_exist) {
+    echo 'XML Savestatus: erfolgreich (1)'; // TRUE
+} else {
+    echo 'XML Savestatus: gescheitert (0)'; // FALSE
+}
+
+?>
