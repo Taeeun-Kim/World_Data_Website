@@ -13,14 +13,16 @@
 - [Getting Started](#getting-started)
   - [Installation](#installation)
 - [Check List](#check-list)
+  - [Aufgabe 1](#aufgabe-1)
+  - [Aufgabe 2](#aufgabe-2)
 - [License](#license)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
 ## About The Project
 
-The project is for exercise task 1 of the course "Web and Multimediaengineering".   
-Learning goal: Basics client with side technologies: HTML5, CSS3 & JS   
+The project is for exercise task 1 and 2 of the course "Web and Multimediaengineering".   
+Learning goal: Basics client with side technologies: HTML5, CSS3 & JS and PHP   
 Basic construction for a website as an interface for world_data
 
 <img src="Bilder/Website_Screenshot.png">
@@ -30,8 +32,7 @@ Basic construction for a website as an interface for world_data
 * HTML
 * CSS (Font Awesome Free, Webfont Roboto)
 * Java Script
-
-
+* PHP
 
 ## Getting Started
 
@@ -39,8 +40,8 @@ Basic construction for a website as an interface for world_data
     Extract "WME_Aufgabe1_Kim" ZIP-Archive
 
 ## Check List
+### Aufgabe 1
 - [x] HTML, CSS and JavaScript only
-
 - [x] Only selected libraries, frameworks, etc. include: 
   - [x] Font Awesome Free (> = 5.15), https://fontawesome.com/free
   - [x] CSS Reset, https://github.com/murtaugh/HTML5 Reset / blob / master / assets / css / reset.css
@@ -80,6 +81,11 @@ in the header
 above the table (1/2/3 columns)
 - [x] Responsive design for header / navigation:
   - [x] Combine / collapse menu items
+
+### Aufgabe 2
+- [x] Server-side parsing of a CSV file
+- [x] Server-side creation of an XML file
+- [x] Transformation from XML to HTML (XSLT processing)
 
 ## License
 
