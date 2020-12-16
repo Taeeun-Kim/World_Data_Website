@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/table.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html {
+            position: relative;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 145%;
+        }
+
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .footer {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            width: 56%;
+            padding: 17px 0;
+            text-align: justify;
+            margin-left: 22%;
+            margin-right: 22%;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 150;
+        }
+
+        .box {
+            position: relative;
+            text-align: left;
+            margin-left: 22%;
+            margin-right: 22%;
+        }
+
+        .content {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding-top: 2%;
+            /* padding between Nav and "World Data Overview" */
+        }
+
+        /* navbar for desktop */
+        .nav {
+            list-style: none;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            text-align: left;
+            width: 100%;
+            height: 70px;
+            /* Height of grey navbar */
+            background: linear-gradient(to bottom, #d2d2d2, #e0e0e0, #efefef);
+            /* Gradient */
+            list-style-type: none;
+            border-bottom: 1px solid #e0e0e0;
+            /* navbar bottom border */
+        }
+
+        .nav li {
+            margin: 12px;
+            line-height: 75px;
+            display: inline;
+            /* hover effect */
+            transition: background-color 200ms linear;
+            -webkit-transition: background-color 200ms linear;
+            -ms-transition: background-color 200ms linear;
+        }
+
+        li:hover {
+            /* hover for nav menu */
+            background-color: #d2d2d2;
+            cursor: pointer;
+        }
+
+        .nav-logo {
+            display: inline-block;
+            vertical-align: top;
+            width: 100px;
+            /* size of logo */
+            height: 100px;
+            margin-right: 20px;
+            margin-top: -1%;
+        }
+
+        .nav-font {
+            text-decoration: none;
+            color: #6d6d6d;
+            border-left: 1px solid #c0c0c0;
+            padding: 0px 0px 0px 10px;
+            margin: 5px -10px 5px 0px;
+        }
+
+        .nav-button {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            width: 100%;
+            height: 70px;
+            background: linear-gradient(to bottom, #d2d2d2, #e0e0e0, #efefef);
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        /* overview */
+        .overview-box {
+            margin-top: 2%;
+            padding: 15px;
+            box-shadow: 2px 5px 10px -3px #e4e4e4;
+            border: 2px solid #e4e4e4;
+            border-top: 2px solid #cceaad;
+            column-count: 3;
+            margin-bottom: 2%;
+        }
+
+        .overview-link {
+            color: #88d12d;
+        }
+
+        .overview-link:hover {
+            text-decoration: none;
+            color: #4c8715;
+            cursor: pointer;
+        }
+
+        /* Table */
+        .filterTable {
+            border-collapse: collapse;
+            position: relative;
+            text-align: left;
+            width: 100%;
+        }
+
+        #cell_padding {
+            padding: 1em;
+            padding-left: 0;
+        }
+
+        tr:nth-of-type(even) {
+            /* Table even color */
+            background-color: #e4e4e4;
+        }
+
+        .show-hide {
+            color: #a4a4a4;
+        }
+
+        .show-hide-list {
+            text-decoration: underline;
+            border-right: 2px solid #a4a4a4;
+        }
+
+        .show-hide-list:hover {
+            color: #4c8715;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* navbar for mobile */
+        .mobile-nav {
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(to bottom, #d2d2d2, #e0e0e0, #efefef);
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .mobile-nav #myLinks {
+            display: none;
+        }
+
+        .mobile-nav a {
+            color: #6d6d6d;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .mobile-nav a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .mobile-nav a:hover {
+            background-color: #cccccc;
+            ;
+            color: black;
+        }
+
+        @media all and (max-width:768px) {
+
+            /* Phones */
+            .nav {
+                display: none;
+            }
+
+            .overview-box {
+                columns: 1;
+            }
+
+            .box {
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+
+            .footer {
+                width: 90%;
+                margin: 5%;
+                padding: 0;
+                text-align: left;
+            }
+        }
+
+        @media all and (min-width: 768px) and (max-width:1200px) {
+
+            /* Tablets */
+            .mobile-nav {
+                display: none;
+            }
+
+            .overview-box {
+                columns: 2;
+            }
+        }
+
+        @media all and (min-width:1200px) {
+
+            /* Desktops */
+            .mobile-nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Top Navigation Menu for Desktop -->
+        <nav class="nav">
+            <ul class="nav" style="margin-left: 22%; margin-right: 21.4%;">
+                <li class="nav-li">
+                    <!-- Logo -->
+                    <a href="index.html" style="text-decoration: none;">
+                        <img class="nav-logo"
+                            src="http://localhost/World_Data_Website_Copy/Bilder/world_data-logo.svg" />
+                    </a>
+                </li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A1 - Table</a></li>
+                <li><a class="nav-font" href="http://localhost/World_Data_Website_Copy/php/parse.php"><i
+                            class="fa fa-bars"></i> A2 - Parse</a></li>
+                <li><a class="nav-font" href="http://localhost/World_Data_Website_Copy/php/save.php"><i
+                            class="fa fa-bars"></i> A2 - Save</a></li>
+                <li><a class="nav-font" href="http://localhost/World_Data_Website_Copy/php/print.php"><i
+                            class="fa fa-bars"></i> A2 - Print</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A3 - REST</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A4 - Vis</a></li>
+                <li><a class="nav-font" href=""><i class="fa fa-bars"></i> A5 - 3D</a></li>
+            </ul>
+        </nav>
+
+        <!-- Top Navigation Menu for Mobile -->
+        <div class="mobile-nav">
+            <a href="index.html" class="active"><img class="nav-logo"
+                    src="http://localhost/World_Data_Website_Copy/Bilder/world_data-logo.svg" /></a>
+            <div id="myLinks" style="background:white">
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A1 - Table</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Parse</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Save</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A2 - Print</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A3 - REST</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A4 - Vis</a>
+                <a class="nav-font" href=""><i class="fa fa-bars"></i> A5 - 3D</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <script> // mobile-nav button script
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </header>
+
+    <div class="box">
+        <div class="content">
+            <section>
+                <h1>Testing our REST API</h1>
+                <div class="rest-interface">
+                    <div class="rest-country">
+                        <div class="rest-api-block">
+                            <h2>Filter Countries</h2>
+                            <form name="country_filter" id="country_filter" method="GET">
+                                <p>
+                                    <label for="country_filter_id">country id</label>
+                                    <input type="text" name="country_filter_id" id="country_filter_id">
+                                </p>
+                                <p>
+                                    <label for="country_filter_range">country id range (eg: 2-5)</label>
+                                    <input type="text" name="country_filter_range" id="country_filter_range">
+                                </p>
+                                <p class="submit">
+                                    <input type="submit" name="submit" id="add_submit" value="Filter Countries">
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="rest-prop">
+                        <div class="rest-api-block">
+                            <h2>Properties</h2>
+                            <select id="prop_selection">
+                                <!--load options via ajax-->
+                            </select>
+                            <button class="green_btn" id="show_selected_prop">Show</button>
+                            <button class="green_btn" id="hide_selected_prop">Hide</button>
+                        </div>
+                    </div>
+                    <div class="rest-add">
+                        <div class="rest-api-block">
+                            <h2>Add Country</h2>
+                            <form name="country_add" id="country_add" method="POST">
+                                <p>
+                                    <label for="country_name">country name</label>
+                                    <input type="text" name="country_name" id="country_name">
+                                </p>
+                                <p>
+                                    <label for="country_birth">birth rate / 1000</label>
+                                    <input type="number" name="country_birth" id="country_birth">
+                                </p>
+                                <p>
+                                    <label for="country_cellphone">cellphones / 100</label>
+                                    <input type="number" name="country_cellphone" id="country_cellphone">
+                                </p>
+                                <p class="submit">
+                                    <input type="submit" name="submit" id="add_submit" value="Add Country">
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="rest-delete">
+                        <div class="rest-api-block">
+                            <h2>Delete Country</h2>
+                            <form name="country_delete" id="country_delete" method="DELETE">
+                                <p>
+                                    <label for="country_delete_id">Country ID to delete</label>
+                                    <input type="text" name="country_delete_id" id="country_delete_id">
+                                </p>
+                                <p class="submit">
+                                    <input type="submit" name="submit" id="rm_submit" value="Remove Country">
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+
+                <table>
+                    <thead>
+                        <tr id="table_head">
+                            <th>ID</th>
+                            <th>Country</th>
+                            <th>birth rate / 1000</th>
+                            <th>cellphones / 100</th>
+                            <th>children / woman</th>
+                            <th>electric usage</th>
+                            <th>internet usage</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                        <!-- list countrys with ajax -->
+                    </tbody>
+                </table>
+
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div style="border-top:2px solid #cceaad; color: #6d6d6d; padding-top: 1.2%;">
+            <div style="float:left;">Copylight © 2020 world_data</div>
+            <div style="float:right;">This solution has been crated by:</div> </br>
+            <div style="float:left;">First course exercise&nbsp;</div>
+            <div style="float:left; font-weight: bold;">HTML, CSS and JS&nbsp;</div>
+            <div style="float:left;">of the lecture Web and Multimedia Engineering</div>
+            <div style="float:right;">Taeeun Kim</div>
+        </div>
+    </footer>
+</body>
+
+</html>
