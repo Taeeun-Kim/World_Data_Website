@@ -1,0 +1,20 @@
+{
+  "name": "world_data_website_copy",
+  "version": "1.0.0",
+  "description": "This is the solution for the WME exercise 3 created by Taeeun Kim.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taeeun-Kim/World_Data_Website_Copy.git"
+  },
+  "author": "Taeeun Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taeeun-Kim/World_Data_Website_Copy/issues"
+  },
+  "homepage": "https://github.com/Taeeun-Kim/World_Data_Website_Copy#readme"
+}
