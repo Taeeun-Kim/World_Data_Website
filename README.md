@@ -95,7 +95,7 @@ The original web "world_data license is from the course "Web und Multimedia Engi
 
 Taeeun Kim: taeeun.kim@mailbox.tu-dresden.de
 
-Project Link: https://github.com/Taeeun-Kim/World_Data_Website_Copy
+Project Link: https://github.com/Taeeun-Kim/World_Data_Website/
 
 ## Acknowledgements
 * [GitHub Pages](https://pages.github.com)
